@@ -26,17 +26,25 @@ export async function POST(request: NextRequest) {
               ? path.join(process.cwd(), config.cwd)
               : path.join(process.cwd(), 'public', 'uploads'),
             allowedTools: config?.allowedTools || ['Read', 'Glob', 'Grep', 'Write', 'Edit', 'Bash'],
+            // 🔧 在 API 路由中必须使用非交互式权限模式
+            // "ask" 模式会导致进程退出，因为无法弹出对话框
+            dangerouslySkipPermissions: true,
           };
 
-          // 只有在明确设置时才添加 permissionMode
-          if (config?.permissionMode) {
-            agentOptions.permissionMode = config.permissionMode;
-          }
+          // ⚠️ 忽略用户传入的 permissionMode，因为在 API 路由中不支持交互式权限
+          // 如果需要权限控制，应该在 allowedTools 中限制工具列表
 
           // 只有在明确设置时才添加 systemPrompt
           if (config?.systemPrompt) {
             agentOptions.systemPrompt = config.systemPrompt;
           }
+
+          // 🔍 调试日志：显示 Agent SDK 配置
+          console.log('🚀 Starting Agent SDK with config:');
+          console.log('Prompt:', prompt);
+          console.log('Options:', JSON.stringify(agentOptions, null, 2));
+          console.log('CWD exists?', require('fs').existsSync(agentOptions.cwd));
+          console.log('ANTHROPIC_API_KEY set?', !!process.env.ANTHROPIC_API_KEY);
 
           // 调用 Agent SDK
           const result = query({
@@ -52,9 +60,27 @@ export async function POST(request: NextRequest) {
 
           controller.close();
         } catch (error) {
+          // 🔴 详细错误日志：后端捕获 Agent SDK 错误
+          console.error('❌ Agent SDK Error Details:');
+          console.error('Error object:', error);
+          console.error('Error type:', error?.constructor?.name);
+          console.error('Error message:', error instanceof Error ? error.message : String(error));
+          console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace');
+
+          if (error && typeof error === 'object') {
+            console.error('Error properties:', Object.keys(error));
+            console.error('Full error object:', JSON.stringify(error, Object.getOwnPropertyNames(error), 2));
+          }
+
           const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+          const errorData = {
+            error: errorMessage,
+            type: error?.constructor?.name,
+            stack: error instanceof Error ? error.stack : undefined,
+          };
+
           controller.enqueue(
-            encoder.encode(JSON.stringify({ error: errorMessage }) + '\n')
+            encoder.encode(JSON.stringify(errorData) + '\n')
           );
           controller.close();
         }
@@ -69,6 +95,12 @@ export async function POST(request: NextRequest) {
       },
     });
   } catch (error) {
+    // 🔴 详细错误日志：外层请求错误
+    console.error('❌ API Route Error Details:');
+    console.error('Error object:', error);
+    console.error('Error message:', error instanceof Error ? error.message : String(error));
+    console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace');
+
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return new Response(JSON.stringify({ error: errorMessage }), {
       status: 500,

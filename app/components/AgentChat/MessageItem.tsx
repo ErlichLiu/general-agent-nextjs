@@ -11,7 +11,7 @@ interface MessageItemProps {
 }
 
 export function MessageItem({ content }: MessageItemProps) {
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   // 文本消息
   if (content.type === 'text') {

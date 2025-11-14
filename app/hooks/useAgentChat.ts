@@ -57,10 +57,30 @@ export function useAgentChat(config: AgentConfig) {
         }
       }
     } catch (error) {
-      console.error('Error:', error);
+      // 🔴 详细错误日志：前端捕获错误
+      console.group('❌ Frontend Error Details');
+      console.error('Error object:', error);
+      console.error('Error type:', error?.constructor?.name);
+      console.error('Error message:', error instanceof Error ? error.message : String(error));
+      console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace');
+
+      if (error && typeof error === 'object') {
+        console.error('Error properties:', Object.keys(error));
+        try {
+          console.error('Full error object:', JSON.stringify(error, Object.getOwnPropertyNames(error), 2));
+        } catch (e) {
+          console.error('Cannot stringify error object');
+        }
+      }
+      console.groupEnd();
+
       setMessages(prev => [
         ...prev,
-        { error: error instanceof Error ? error.message : 'Unknown error' },
+        {
+          error: error instanceof Error ? error.message : 'Unknown error',
+          errorType: error?.constructor?.name,
+          errorStack: error instanceof Error ? error.stack : undefined,
+        } as any,
       ]);
     } finally {
       setIsLoading(false);
