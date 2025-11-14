@@ -1,9 +1,10 @@
 import { query } from '@anthropic-ai/claude-agent-sdk';
 import { NextRequest } from 'next/server';
+import path from 'path';
 
 export async function POST(request: NextRequest) {
   try {
-    const { prompt } = await request.json();
+    const { prompt, config } = await request.json();
 
     if (!prompt) {
       return new Response(JSON.stringify({ error: 'Prompt is required' }), {
@@ -18,15 +19,29 @@ export async function POST(request: NextRequest) {
         const encoder = new TextEncoder();
 
         try {
+          // 构建 Agent SDK 配置，使用传入的 config 或默认值
+          const agentOptions: any = {
+            model: config?.model || 'sonnet',
+            cwd: config?.cwd
+              ? path.join(process.cwd(), config.cwd)
+              : path.join(process.cwd(), 'public', 'uploads'),
+            allowedTools: config?.allowedTools || ['Read', 'Glob', 'Grep', 'Write', 'Edit', 'Bash'],
+          };
+
+          // 只有在明确设置时才添加 permissionMode
+          if (config?.permissionMode) {
+            agentOptions.permissionMode = config.permissionMode;
+          }
+
+          // 只有在明确设置时才添加 systemPrompt
+          if (config?.systemPrompt) {
+            agentOptions.systemPrompt = config.systemPrompt;
+          }
+
           // 调用 Agent SDK
           const result = query({
             prompt,
-            options: {
-              model: 'sonnet',
-              cwd: process.cwd(),
-              // 限制可用工具，只允许读取文件，避免意外修改
-              allowedTools: ['Read', 'Glob', 'Grep'],
-            },
+            options: agentOptions,
           });
 
           // 流式处理响应
