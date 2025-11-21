@@ -7,7 +7,7 @@ import type { FileInfo } from '@/app/types/file';
  */
 export function useFileManager() {
   const [files, setFiles] = useState<FileInfo[]>([]);
-  const [isUploading, setIsUploading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   // 获取文件列表
   const fetchFiles = useCallback(async () => {
@@ -24,19 +24,40 @@ export function useFileManager() {
     fetchFiles();
   }, [fetchFiles]);
 
-  // 上传文件
-  const handleFileUpload = async (fileList: FileList) => {
-    if (fileList.length === 0) return;
+  // 从拖兔平台获取并下载文件
+  const fetchFromTuotu = async (queryId: string, requirementId: string) => {
+    setIsLoading(true);
 
-    setIsUploading(true);
+    // 开始轮询文件列表
+    const pollInterval = setInterval(() => {
+      fetchFiles();
+    }, 2000); // 每2秒刷新一次
+
     try {
-      await fileService.uploadFiles(fileList);
-      await fetchFiles(); // 刷新文件列表
+      const response = await fetch('/api/tuotu', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ queryId, requirementId }),
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.error || '获取失败');
+      }
+
+      const result = await response.json();
+      console.log('获取完成:', result);
+
+      // 最终刷新文件列表
+      await fetchFiles();
+
+      alert(`成功下载 ${result.filesCount}/${result.totalFiles} 个文件`);
     } catch (error) {
-      console.error('上传错误:', error);
-      alert(error instanceof Error ? error.message : '上传失败');
+      console.error('获取错误:', error);
+      alert(error instanceof Error ? error.message : '获取失败');
     } finally {
-      setIsUploading(false);
+      clearInterval(pollInterval);
+      setIsLoading(false);
     }
   };
 
@@ -48,7 +69,7 @@ export function useFileManager() {
 
     try {
       await fileService.deleteFile(filename);
-      await fetchFiles(); // 刷新文件列表
+      await fetchFiles();
     } catch (error) {
       console.error('删除错误:', error);
       alert(error instanceof Error ? error.message : '删除失败');
@@ -57,8 +78,9 @@ export function useFileManager() {
 
   return {
     files,
-    isUploading,
-    handleFileUpload,
+    isLoading,
+    fetchFromTuotu,
     handleDeleteFile,
+    fetchFiles,
   };
 }

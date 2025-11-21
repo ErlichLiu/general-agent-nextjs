@@ -18,6 +18,10 @@ export async function POST(request: NextRequest) {
       async start(controller) {
         const encoder = new TextEncoder();
 
+        console.log('Current PATH:', process.env.PATH);
+        console.log('Node location check:',
+        require('child_process').execSync('which node').toString());
+
         try {
           // 构建 Agent SDK 配置，使用传入的 config 或默认值
           const agentOptions: any = {
