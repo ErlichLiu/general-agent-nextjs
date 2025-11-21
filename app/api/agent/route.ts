@@ -33,6 +33,12 @@ export async function POST(request: NextRequest) {
             // 🔧 在 API 路由中必须使用非交互式权限模式
             // "ask" 模式会导致进程退出，因为无法弹出对话框
             dangerouslySkipPermissions: true,
+            // 传递环境变量，支持代理配置
+            env: {
+              ...process.env,
+              ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY,
+              ANTHROPIC_BASE_URL: process.env.ANTHROPIC_BASE_URL,
+            },
           };
 
           // ⚠️ 忽略用户传入的 permissionMode，因为在 API 路由中不支持交互式权限
