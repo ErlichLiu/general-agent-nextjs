@@ -18,24 +18,21 @@ export async function POST(request: NextRequest) {
       async start(controller) {
         const encoder = new TextEncoder();
 
-        console.log('Current PATH:', process.env.PATH);
-        console.log('Node location check:',
-        require('child_process').execSync('which node').toString());
-
         try {
           // 构建 Agent SDK 配置，使用传入的 config 或默认值
+          // 处理 cwd 路径，移除前导斜杠避免路径错误
+          const cwdPath = 'public/uploads'
+
           const agentOptions: any = {
             model: config?.model || 'sonnet',
-            cwd: config?.cwd
-              ? path.join(process.cwd(), config.cwd)
-              : path.join(process.cwd(), 'public', 'uploads'),
-            allowedTools: config?.allowedTools || ['Read', 'Glob', 'Grep', 'Write', 'Edit', 'Bash'],
+            cwd: cwdPath,
+            allowedTools: ['Read', 'Glob', 'Grep', 'Write', 'Edit', 'Bash', 'SeaTaskrch','webFetch', 'WebSearch'],
             // 🔧 在 API 路由中必须使用非交互式权限模式
             // "ask" 模式会导致进程退出，因为无法弹出对话框
             dangerouslySkipPermissions: true,
             // 传递环境变量，支持代理配置
             env: {
-              ...process.env,
+              PATH: process.env.PATH,
               ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY,
               ANTHROPIC_BASE_URL: process.env.ANTHROPIC_BASE_URL,
             },

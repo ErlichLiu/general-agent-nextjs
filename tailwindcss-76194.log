@@ -1,0 +1,674 @@
+2025-11-21T05:07:27.860139Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2025-11-21T05:07:27.860419Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "/Users/erlichliu/Workspace/Project/Agents/general-agent-test", pattern: "**/*", negated: false }
+2025-11-21T05:07:27.861099Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2025-11-21T05:07:27.861108Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "/Users/erlichliu/Workspace/Project/Agents/general-agent-test" }
+2025-11-21T05:07:27.862776Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:07:27.863302Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:07:27.863353Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:07:27.863382Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types/agent.ts"
+2025-11-21T05:07:27.863395Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types/file.ts"
+2025-11-21T05:07:27.863407Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types/config.ts"
+2025-11-21T05:07:27.863504Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:07:27.863528Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils/formatters.ts"
+2025-11-21T05:07:27.863553Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:07:27.863588Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:07:27.863615Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat/SDKMessageCard.tsx"
+2025-11-21T05:07:27.863626Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat/index.tsx"
+2025-11-21T05:07:27.863635Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat/MessageItem.tsx"
+2025-11-21T05:07:27.863646Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat/MessageList.tsx"
+2025-11-21T05:07:27.863655Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat/ChatInput.tsx"
+2025-11-21T05:07:27.863678Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:07:27.863704Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel/index.tsx"
+2025-11-21T05:07:27.863714Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel/ConfigForm.tsx"
+2025-11-21T05:07:27.863736Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:07:27.863759Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager/index.tsx"
+2025-11-21T05:07:27.863770Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager/FileUploadZone.tsx"
+2025-11-21T05:07:27.863788Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager/FileList.tsx"
+2025-11-21T05:07:27.863810Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:07:27.863831Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks/useAgentChat.ts"
+2025-11-21T05:07:27.863841Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks/useDragAndDrop.ts"
+2025-11-21T05:07:27.863850Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks/useFileManager.ts"
+2025-11-21T05:07:27.863859Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks/useAgentConfig.ts"
+2025-11-21T05:07:27.863868Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/layout.tsx"
+2025-11-21T05:07:27.863888Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:07:27.863921Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:07:27.863941Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent/route.ts"
+2025-11-21T05:07:27.863962Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:07:27.863994Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:07:27.864027Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:07:27.864057Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:07:27.864078Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files/route.ts"
+2025-11-21T05:07:27.864099Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:07:27.864122Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu/route.ts"
+2025-11-21T05:07:27.864143Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:07:27.864163Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload/route.ts"
+2025-11-21T05:07:27.864175Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/page.tsx"
+2025-11-21T05:07:27.864185Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/globals.css"
+2025-11-21T05:07:27.864205Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:07:27.864226Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services/agentService.ts"
+2025-11-21T05:07:27.864234Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services/tuotuApiService.ts"
+2025-11-21T05:07:27.864248Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services/fileService.ts"
+2025-11-21T05:07:27.864264Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/postcss.config.mjs"
+2025-11-21T05:07:27.864331Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/README.md"
+2025-11-21T05:07:27.864351Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:07:27.864375Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public/file.svg"
+2025-11-21T05:07:27.864414Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public/vercel.svg"
+2025-11-21T05:07:27.864424Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public/next.svg"
+2025-11-21T05:07:27.864434Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public/globe.svg"
+2025-11-21T05:07:27.864445Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public/window.svg"
+2025-11-21T05:07:27.864463Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/package.json"
+2025-11-21T05:07:27.864484Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:07:27.864505Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts/test-tuotu-api.ts"
+2025-11-21T05:07:27.864515Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/tsconfig.json"
+2025-11-21T05:07:27.864552Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/eslint.config.mjs"
+2025-11-21T05:07:27.864561Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/CLAUDE.md"
+2025-11-21T05:07:27.864569Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/next.config.ts"
+2025-11-21T05:07:27.864640Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:07:27.864644Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-11-21T05:07:27.864652Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:07:27.864654Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 40 file(s)
+2025-11-21T05:07:27.864914Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/page.tsx"
+2025-11-21T05:07:27.864956Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public/globe.svg"
+2025-11-21T05:07:27.864958Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types/agent.ts"
+2025-11-21T05:07:27.864981Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel/ConfigForm.tsx"
+2025-11-21T05:07:27.864993Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public/next.svg"
+2025-11-21T05:07:27.865022Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/package.json"
+2025-11-21T05:07:27.865025Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts/test-tuotu-api.ts"
+2025-11-21T05:07:27.865055Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public/vercel.svg"
+2025-11-21T05:07:27.865058Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/tsconfig.json"
+2025-11-21T05:07:27.865151Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload/route.ts"
+2025-11-21T05:07:27.865150Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files/route.ts"
+2025-11-21T05:07:27.865261Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services/agentService.ts"
+2025-11-21T05:07:27.865311Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services/tuotuApiService.ts"
+2025-11-21T05:07:27.865467Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public/window.svg"
+2025-11-21T05:07:27.865468Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/eslint.config.mjs"
+2025-11-21T05:07:27.865538Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat/index.tsx"
+2025-11-21T05:07:27.865540Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu/route.ts"
+2025-11-21T05:07:27.865571Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types/config.ts"
+2025-11-21T05:07:27.865561Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager/index.tsx"
+2025-11-21T05:07:27.865573Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services/fileService.ts"
+2025-11-21T05:07:27.865575Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types/file.ts"
+2025-11-21T05:07:27.865616Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/postcss.config.mjs"
+2025-11-21T05:07:27.865626Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks/useAgentConfig.ts"
+2025-11-21T05:07:27.865636Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks/useDragAndDrop.ts"
+2025-11-21T05:07:27.865639Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/CLAUDE.md"
+2025-11-21T05:07:27.865650Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/layout.tsx"
+2025-11-21T05:07:27.865679Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat/ChatInput.tsx"
+2025-11-21T05:07:27.865680Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat/MessageList.tsx"
+2025-11-21T05:07:27.865680Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat/MessageItem.tsx"
+2025-11-21T05:07:27.865701Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils/formatters.ts"
+2025-11-21T05:07:27.865701Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager/FileUploadZone.tsx"
+2025-11-21T05:07:27.865716Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/next.config.ts"
+2025-11-21T05:07:27.865731Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks/useFileManager.ts"
+2025-11-21T05:07:27.865758Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager/FileList.tsx"
+2025-11-21T05:07:27.865763Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/README.md"
+2025-11-21T05:07:27.865809Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public/file.svg"
+2025-11-21T05:07:27.865812Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel/index.tsx"
+2025-11-21T05:07:27.865829Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent/route.ts"
+2025-11-21T05:07:27.865834Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks/useAgentChat.ts"
+2025-11-21T05:07:27.865883Z  INFO tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat/SDKMessageCard.tsx"
+2025-11-21T05:07:27.865944Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:07:27.865950Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:07:27.865954Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-11-21T05:07:27.866680Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-11-21T05:07:27.866690Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:07:27.866693Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:07:27.866696Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-11-21T05:07:27.866717Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/globals.css"
+2025-11-21T05:07:27.866721Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:07:27.866724Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2025-11-21T05:07:27.866727Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2025-11-21T05:07:27.866830Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2025-11-21T05:07:27.866834Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2025-11-21T05:07:27.867115Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-11-21T05:07:27.867362Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:07:27.867373Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:07:27.867757Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:07:27.867802Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:07:27.867865Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:07:27.867901Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:07:27.867931Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:07:27.867999Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:07:27.868055Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:07:27.868104Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:07:27.868161Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:07:27.868197Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:07:27.868237Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:07:27.868273Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:07:27.868308Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:07:27.868340Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:07:27.868377Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:07:27.868415Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:07:27.868465Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:07:27.868570Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:07:27.868660Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:07:27.868731Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:07:27.868823Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:07:27.868920Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:07:27.868925Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:07:27.869286Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:07:27.869331Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:07:27.869390Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:07:27.869430Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:07:27.869467Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:07:27.869530Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:07:27.869576Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:07:27.869628Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:07:27.869688Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:07:27.869732Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:07:27.869770Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:07:27.869807Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:07:27.869837Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:07:27.869868Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:07:27.869915Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:07:27.869951Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:07:27.870001Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:07:27.870122Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:07:27.870266Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:07:27.870385Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:07:27.871941Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:03.353939Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:03.354736Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:17:03.354816Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:17:03.354898Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:17:03.354955Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:17:03.355004Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:17:03.355085Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:17:03.355147Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:17:03.355215Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:17:03.355291Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:17:03.355340Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:17:03.355364Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent/route.ts"
+2025-11-21T05:17:03.355401Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:17:03.355517Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:17:03.355582Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:17:03.355635Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:17:03.355692Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:17:03.355755Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:17:03.355834Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:17:03.356005Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:17:03.356144Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:17:03.356262Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:03.356269Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:03.356273Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:03.356276Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-11-21T05:17:03.356304Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent/route.ts"
+2025-11-21T05:17:03.356310Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:03.356313Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:03.356316Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:03.356479Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:03.356486Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:03.356529Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:03.356756Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:03.356761Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:03.357214Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:17:03.357284Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:17:03.357354Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:17:03.357399Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:17:03.357438Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:17:03.357506Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:17:03.357559Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:17:03.357614Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:17:03.357835Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:17:03.357892Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:17:03.357971Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:17:03.358028Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:17:03.358073Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:17:03.358115Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:17:03.358161Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:17:03.358207Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:17:03.358267Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:17:03.358414Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:17:03.358534Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:17:03.358649Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:03.358826Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:03.358981Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:03.358988Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:17.158358Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:17.158836Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:17:17.158892Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:17:17.158960Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:17:17.159006Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:17:17.159048Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:17:17.159114Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:17:17.159165Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:17:17.159219Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:17:17.159280Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:17:17.159320Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:17:17.159339Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent/route.ts"
+2025-11-21T05:17:17.159387Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:17:17.159426Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:17:17.159466Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:17:17.159503Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:17:17.159545Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:17:17.159589Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:17:17.159641Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:17:17.159767Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:17:17.159876Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:17:17.159960Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:17.159965Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:17.159968Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:17.159970Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-11-21T05:17:17.159990Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent/route.ts"
+2025-11-21T05:17:17.159995Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:17.159997Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:17.160000Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:17.160104Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:17.160135Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:17.160280Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:17.160484Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:17.160491Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:17.160960Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:17:17.161020Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:17:17.161090Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:17:17.161134Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:17:17.161170Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:17:17.161232Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:17:17.161277Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:17:17.161341Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:17:17.161402Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:17:17.161439Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:17:17.161476Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:17:17.161517Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:17:17.161554Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:17:17.161587Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:17:17.161625Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:17:17.161662Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:17:17.161717Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:17:17.161832Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:17:17.161932Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:17:17.162013Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:17.162105Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:17:17.162201Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:17:17.162208Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:35.750166Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:35.750938Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:19:35.751003Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:19:35.751076Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:19:35.751126Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:19:35.751169Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:19:35.751244Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:19:35.751298Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:19:35.751356Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:19:35.751424Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:19:35.751486Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:19:35.751532Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:19:35.751574Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:19:35.751614Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:19:35.751655Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:19:35.751699Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:19:35.751744Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:19:35.751800Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:19:35.751935Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:19:35.752045Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:19:35.752133Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:35.752138Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:35.752141Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:35.752143Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 0 file(s)
+2025-11-21T05:19:35.752147Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:35.752149Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:35.752152Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:35.752155Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:35.752158Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:35.752161Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:35.752342Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:35.752346Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:35.752748Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:19:35.752816Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:19:35.752878Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:19:35.752918Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:19:35.752952Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:19:35.753012Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:19:35.753056Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:19:35.753103Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:19:35.753170Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:19:35.753204Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:19:35.753241Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:19:35.753273Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:19:35.753305Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:19:35.753336Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:19:35.753371Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:19:35.753407Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:19:35.753453Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:19:35.753559Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:19:35.753654Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:19:35.753732Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:35.753857Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:35.753943Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:35.753949Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:38.424237Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:38.424739Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:19:38.424799Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:19:38.424873Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:19:38.424924Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:19:38.424968Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:19:38.425043Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:19:38.425099Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:19:38.425159Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:19:38.425226Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:19:38.425271Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:19:38.425331Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:19:38.425374Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:19:38.425420Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:19:38.425462Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:19:38.425509Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:19:38.425557Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:19:38.425616Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:19:38.425763Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:19:38.425876Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:19:38.425969Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:38.425974Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:38.425977Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:38.425980Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 0 file(s)
+2025-11-21T05:19:38.425984Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:38.425987Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:38.425993Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:38.425997Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:38.425999Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:38.426003Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:38.426173Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:38.426178Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:38.426466Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:19:38.426504Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:19:38.426553Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:19:38.426588Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:19:38.426619Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:19:38.426675Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:19:38.426715Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:19:38.426761Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:19:38.426821Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:19:38.426853Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:19:38.426888Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:19:38.426918Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:19:38.426949Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:19:38.426979Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:19:38.427014Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:19:38.427048Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:19:38.427093Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:19:38.427194Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:19:38.427286Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:19:38.427358Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:38.427467Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:19:38.427558Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:19:38.427565Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:22:06.665372Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:22:06.665867Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:22:06.665927Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:22:06.665998Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:22:06.666049Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:22:06.666090Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:22:06.666159Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:22:06.666214Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:22:06.666271Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:22:06.666336Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:22:06.666379Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:22:06.666399Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent/route.ts"
+2025-11-21T05:22:06.666439Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:22:06.666481Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:22:06.666525Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:22:06.666566Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:22:06.666612Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:22:06.666659Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:22:06.666717Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:22:06.666856Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:22:06.666974Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:22:06.667062Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:22:06.667067Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-11-21T05:22:06.667070Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:22:06.667072Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-11-21T05:22:06.667099Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent/route.ts"
+2025-11-21T05:22:06.667105Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:22:06.667108Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:22:06.667110Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-11-21T05:22:06.667203Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-11-21T05:22:06.667216Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:22:06.667238Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-11-21T05:22:06.667412Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:22:06.667417Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:22:06.667766Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:22:06.667812Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:22:06.667868Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:22:06.667906Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:22:06.667939Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:22:06.667997Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:22:06.668039Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:22:06.668100Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:22:06.668153Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:22:06.668185Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:22:06.668220Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:22:06.668252Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:22:06.668284Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:22:06.668315Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:22:06.668350Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:22:06.668385Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:22:06.668435Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:22:06.668542Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:22:06.668640Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:22:06.668723Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:22:06.668772Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:22:06.668825Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:22:06.668829Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:23:22.986849Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:23:22.987328Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:23:22.987383Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:23:22.987450Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:23:22.987491Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:23:22.987527Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:23:22.987591Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:23:22.987638Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:23:22.987692Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:23:22.987752Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:23:22.987799Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:23:22.987820Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent/route.ts"
+2025-11-21T05:23:22.987845Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:23:22.987879Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:23:22.987914Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:23:22.987947Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:23:22.987984Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:23:22.988025Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:23:22.988075Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:23:22.988243Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:23:22.988376Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:23:22.988489Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:23:22.988496Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-11-21T05:23:22.988500Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:23:22.988502Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-11-21T05:23:22.988530Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent/route.ts"
+2025-11-21T05:23:22.988537Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:23:22.988541Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:23:22.988543Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-11-21T05:23:22.988929Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-11-21T05:23:22.988956Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:23:22.989434Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-11-21T05:23:22.989636Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:23:22.989642Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:23:22.990096Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:23:22.990261Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:23:22.990344Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:23:22.990387Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:23:22.990424Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:23:22.990487Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:23:22.990532Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:23:22.990582Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:23:22.990639Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:23:22.990675Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:23:22.990713Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:23:22.990746Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:23:22.990781Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:23:22.990813Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:23:22.990849Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:23:22.990887Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:23:22.990936Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:23:22.991048Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:23:22.991147Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:23:22.991255Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:23:22.993859Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:23:22.993982Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:23:22.993990Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:39.303643Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:39.304563Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:25:39.304639Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:25:39.304732Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:25:39.304808Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:25:39.304928Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:25:39.305085Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:25:39.305152Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:25:39.305241Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:25:39.305323Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:25:39.305370Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:25:39.305421Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:25:39.305467Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:25:39.305521Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:25:39.305574Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:25:39.305628Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:25:39.305683Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:25:39.305751Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:25:39.305907Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:25:39.306027Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:25:39.306139Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:39.306146Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:39.306150Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:39.306154Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 0 file(s)
+2025-11-21T05:25:39.306159Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:39.306164Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:39.306168Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:39.306173Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:39.306176Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:39.306181Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:39.306372Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:39.306377Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:39.306735Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:25:39.306780Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:25:39.306833Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:25:39.306871Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:25:39.306909Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:25:39.306990Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:25:39.307046Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:25:39.307099Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:25:39.307164Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:25:39.307205Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:25:39.307252Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:25:39.307289Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:25:39.307340Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:25:39.307378Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:25:39.307418Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:25:39.307466Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:25:39.307517Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:25:39.307637Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:25:39.307746Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:25:39.307829Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:39.307941Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:39.308042Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:39.308051Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:43.559333Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:43.560123Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:25:43.560248Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:25:43.560393Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:25:43.560508Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:25:43.560609Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:25:43.560749Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:25:43.560851Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:25:43.560966Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:25:43.561110Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:25:43.561217Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:25:43.561320Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:25:43.561396Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:25:43.561475Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:25:43.561555Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:25:43.561642Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:25:43.561731Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:25:43.561842Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:25:43.562082Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:25:43.562320Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:25:43.562512Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:43.562523Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:43.562531Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:43.562538Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 0 file(s)
+2025-11-21T05:25:43.562546Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:43.562552Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:43.562557Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:43.562563Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:43.562568Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:43.562574Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:43.562836Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:43.562846Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:43.563359Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:25:43.563432Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:25:43.563523Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:25:43.563588Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:25:43.563666Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:25:43.563779Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:25:43.563848Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:25:43.563925Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:25:43.564013Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:25:43.564079Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:25:43.564164Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:25:43.564227Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:25:43.564298Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:25:43.564367Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:25:43.564485Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:25:43.564626Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:25:43.564795Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:25:43.564999Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:25:43.565177Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:25:43.565316Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:43.565448Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:25:43.565546Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:25:43.565554Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:41:47.421685Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:41:47.423979Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:41:47.424066Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:41:47.424145Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:41:47.424197Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:41:47.424257Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:41:47.424355Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:41:47.424419Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:41:47.424498Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:41:47.424565Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:41:47.424610Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:41:47.424634Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent/route.ts"
+2025-11-21T05:41:47.424766Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:41:47.424835Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:41:47.424890Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:41:47.424940Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:41:47.424998Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:41:47.425054Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:41:47.425118Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:41:47.425280Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:41:47.425415Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:41:47.425519Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:41:47.425528Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-11-21T05:41:47.425533Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:41:47.425536Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-11-21T05:41:47.425567Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent/route.ts"
+2025-11-21T05:41:47.425579Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:41:47.425589Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:41:47.425593Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-11-21T05:41:47.425825Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-11-21T05:41:47.425864Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-11-21T05:41:47.425920Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-11-21T05:41:47.426252Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-11-21T05:41:47.426263Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-11-21T05:41:47.426734Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app"
+2025-11-21T05:41:47.426794Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/types"
+2025-11-21T05:41:47.426853Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/utils"
+2025-11-21T05:41:47.426898Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components"
+2025-11-21T05:41:47.426937Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/AgentChat"
+2025-11-21T05:41:47.427002Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/ConfigPanel"
+2025-11-21T05:41:47.427047Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/components/FileManager"
+2025-11-21T05:41:47.427097Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/hooks"
+2025-11-21T05:41:47.427156Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api"
+2025-11-21T05:41:47.427194Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/agent"
+2025-11-21T05:41:47.427233Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru"
+2025-11-21T05:41:47.427269Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/health"
+2025-11-21T05:41:47.427307Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/mineru/process"
+2025-11-21T05:41:47.427343Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/files"
+2025-11-21T05:41:47.427386Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/tuotu"
+2025-11-21T05:41:47.427430Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/api/upload"
+2025-11-21T05:41:47.427492Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/app/services"
+2025-11-21T05:41:47.427969Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/public"
+2025-11-21T05:41:47.428800Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/erlichliu/Workspace/Project/Agents/general-agent-test/scripts"
+2025-11-21T05:41:47.428948Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-11-21T05:41:47.429072Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-11-21T05:41:47.429177Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-11-21T05:41:47.429203Z  INFO get_globs: tailwindcss_oxide::scanner: exit
