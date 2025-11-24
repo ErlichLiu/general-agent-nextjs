@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "tuotu-oss": {
+      "command": "npx",
+      "args": ["ts-node", "mcp-servers/tuotu-oss/index.ts"],
+      "env": {
+        "TUOTU_USERNAME": "13906631191",
+        "TUOTU_PASSWORD": "hlp2ePCpRzG5xvpwSLLTuQ==",
+        "TUOTU_UID": "1762741586029",
+        "TUOTU_FIELD_NAME": "xeifuxrwenhkomxx",
+        "TUOTU_FORM_HEAD_UUID": "f58c509751db446f9d8e662c25886c1f",
+        "TUOTU_API_HOST": "api.ontuotu.com",
+        "TUOTU_API_ORIGIN": "https://paas.ontuotu.com"
+      }
+    }
+  }
+}

@@ -46,12 +46,7 @@ interface FileInfo {
   category: string;
 }
 
-interface OutputDirs {
-  root: string;
-  downloads: string;
-  images: string;
-  texts: string;
-}
+const rootDir = path.join(process.cwd(), 'public', 'uploads');
 
 // ==================== 配置 ====================
 
@@ -65,38 +60,7 @@ function getConfig(): TuotuConfig {
   };
 }
 
-function getQueryId(): string {
-  return process.env.QUERY_ID || '';
-}
-
-function getRequirementId(): string {
-  return process.env.REQUIREMENT_ID || '';
-}
-
-// API 配置
-function getApiConfigs(): Record<string, ApiConfig> {
-  return {
-    requirementForm: {
-      name: '需求填写单',
-      formHeadUuid: '000e2589e57046b8a60a7490e4bb8972',
-      params: {
-        page: 1,
-        limit: 50,
-        lsccgxajrqsfnhbp: getQueryId(),
-        jagzssffplsjmxxo: getRequirementId(),
-      },
-    },
-    companyInfo: {
-      name: '企业基本信息',
-      formHeadUuid: 'e1d617c9225f4dd4a2a175ef3b602723',
-      params: {
-        page: 1,
-        limit: 50,
-        xgibbuhktvvnrxyv: getQueryId(),
-      },
-    },
-  };
-}
+// API 配置已移至 TuotuApiClient 类内部
 
 // 子表字段
 const CHILD_TABLE_FIELDS = [
@@ -213,32 +177,17 @@ function getFileCategory(filename: string): string {
   return 'unknown';
 }
 
-function createOutputDirs(queryId: string, requirementId: string): OutputDirs {
-  const timestamp = new Date().toISOString().replace(/[:.]/g, '').substring(0, 15);
-  const dirName = `document_processing_${queryId}_${requirementId}_${timestamp}`;
-  const root = path.join(process.cwd(), dirName);
-
-  const dirs: OutputDirs = {
-    root,
-    downloads: path.join(root, 'downloads'),
-    images: path.join(root, 'images'),
-    texts: path.join(root, 'extracted_texts'),
-  };
-
-  // 创建所有目录
-  Object.values(dirs).forEach(dir => {
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
-  });
-
-  return dirs;
-}
-
 // ==================== 主客户端类 ====================
 
 class TuotuApiClient {
   private token: string | null = null;
+  private queryId: string;
+  private requirementId: string;
+
+  constructor(queryId: string = '', requirementId: string = '') {
+    this.queryId = queryId;
+    this.requirementId = requirementId;
+  }
 
   /**
    * 登录获取 Token
@@ -285,6 +234,33 @@ class TuotuApiClient {
       'tuotwo-session': cfg.session,
       'Accept': 'application/json',
       'Accept-Encoding': 'gzip, deflate',
+    };
+  }
+
+  /**
+   * 获取 API 配置
+   */
+  private getApiConfigs(): Record<string, ApiConfig> {
+    return {
+      requirementForm: {
+        name: '需求填写单',
+        formHeadUuid: '000e2589e57046b8a60a7490e4bb8972',
+        params: {
+          page: 1,
+          limit: 50,
+          lsccgxajrqsfnhbp: this.queryId,
+          jagzssffplsjmxxo: this.requirementId,
+        },
+      },
+      companyInfo: {
+        name: '企业基本信息',
+        formHeadUuid: 'e1d617c9225f4dd4a2a175ef3b602723',
+        params: {
+          page: 1,
+          limit: 50,
+          xgibbuhktvvnrxyv: this.queryId,
+        },
+      },
     };
   }
 
@@ -357,7 +333,7 @@ class TuotuApiClient {
 
     console.log('\n📊 获取企业数据...');
 
-    const apiConfigs = getApiConfigs();
+    const apiConfigs = this.getApiConfigs();
     const promises = Object.values(apiConfigs).map(api =>
       this.executeApiRequest(api)
         .then(res => ({ success: true, name: api.name, data: res }))
@@ -436,13 +412,18 @@ class TuotuApiClient {
   /**
    * 下载所有文件
    */
-  async downloadFiles(files: FileInfo[], outputDirs: OutputDirs): Promise<string[]> {
+  async downloadFiles(files: FileInfo[], outputDir: string): Promise<string[]> {
     console.log('\n📥 下载文件...');
+
+    // 确保输出目录存在
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
 
     const downloadedPaths: string[] = [];
 
     for (const file of files) {
-      const filePath = path.join(outputDirs.downloads, file.fileName);
+      const filePath = path.join(outputDir, file.fileName);
 
       try {
         await downloadFile(file.fileUrl, filePath);
@@ -461,7 +442,10 @@ class TuotuApiClient {
 // ==================== 主函数 ====================
 
 async function main() {
-  const client = new TuotuApiClient();
+  // 从环境变量读取参数（用于命令行脚本）
+  const queryId = process.env.QUERY_ID || '';
+  const requirementId = process.env.REQUIREMENT_ID || '';
+  const client = new TuotuApiClient(queryId, requirementId);
 
   try {
     // 1. 登录
@@ -473,21 +457,12 @@ async function main() {
     // 3. 收集文件信息
     const files = client.collectFiles(apiData);
 
-    // 4. 创建输出目录
-    const outputDirs = createOutputDirs(getQueryId(), getRequirementId());
-    console.log(`\n📂 输出目录: ${outputDirs.root}`);
-
     // 5. 下载文件
-    const downloadedFiles = await client.downloadFiles(files, outputDirs);
-
-    // 6. 保存 API 数据
-    const dataPath = path.join(outputDirs.root, 'api-data.json');
-    fs.writeFileSync(dataPath, JSON.stringify(apiData, null, 2));
-    console.log(`\n💾 API 数据已保存: ${dataPath}`);
+    const downloadedFiles = await client.downloadFiles(files, rootDir);
 
     return {
       success: true,
-      outputDir: outputDirs.root,
+      outputDir: rootDir,
       filesCount: downloadedFiles.length,
       apiData,
     };
@@ -498,11 +473,5 @@ async function main() {
   }
 }
 
-export { TuotuApiClient, main, createOutputDirs };
+export { TuotuApiClient };
 
-// 直接运行
-if (require.main === module) {
-  main()
-    .then(result => console.log('\n✅ 完成:', result.outputDir))
-    .catch(err => console.error('\n❌ 失败:', err.message));
-}

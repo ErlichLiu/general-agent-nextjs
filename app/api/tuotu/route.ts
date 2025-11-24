@@ -4,14 +4,11 @@ import path from 'path';
 
 // 动态设置环境变量并导入服务
 async function fetchAndDownload(queryId: string, requirementId: string) {
-  // 设置环境变量
-  process.env.QUERY_ID = queryId;
-  process.env.REQUIREMENT_ID = requirementId;
 
   // 动态导入以获取最新环境变量
   const { TuotuApiClient } = await import('@/app/services/tuotuApiService');
 
-  const client = new TuotuApiClient();
+  const client = new TuotuApiClient(queryId, requirementId);
   const uploadDir = path.join(process.cwd(), 'public/uploads');
 
   // 清空目录
@@ -39,24 +36,8 @@ async function fetchAndDownload(queryId: string, requirementId: string) {
   // 收集文件
   const files = client.collectFiles(apiData);
 
-  // 创建输出目录结构
-  const outputDirs = {
-    root: uploadDir,
-    downloads: uploadDir,
-    images: path.join(uploadDir, 'images'),
-    texts: path.join(uploadDir, 'extracted_texts'),
-  };
-
-  // 确保子目录存在
-  if (!fs.existsSync(outputDirs.images)) {
-    fs.mkdirSync(outputDirs.images, { recursive: true });
-  }
-  if (!fs.existsSync(outputDirs.texts)) {
-    fs.mkdirSync(outputDirs.texts, { recursive: true });
-  }
-
   // 下载文件
-  const downloadedFiles = await client.downloadFiles(files, outputDirs);
+  const downloadedFiles = await client.downloadFiles(files, uploadDir);
 
   // 保存 API 数据
   const dataPath = path.join(uploadDir, 'api-data.json');

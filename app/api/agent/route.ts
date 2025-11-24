@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
           const agentOptions: any = {
             model: config?.model || 'sonnet',
             cwd: cwdPath,
-            allowedTools: ['Read', 'Glob', 'Grep', 'Write', 'Edit', 'Bash', 'SeaTaskrch','webFetch', 'WebSearch'],
+            allowedTools: ['Read', 'Glob', 'Grep', 'Write', 'Edit', 'Bash', 'SeaTaskrch','webFetch', 'WebSearch', 'mcp__tuotu-oss__upload_report'],
             // 🔧 在 API 路由中必须使用非交互式权限模式
             // "ask" 模式会导致进程退出，因为无法弹出对话框
             dangerouslySkipPermissions: true,
@@ -35,6 +35,29 @@ export async function POST(request: NextRequest) {
               PATH: process.env.PATH,
               ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY,
               ANTHROPIC_BASE_URL: process.env.ANTHROPIC_BASE_URL,
+              TUOTU_USERNAME: process.env.TUOTU_USERNAME,
+              TUOTU_PASSWORD: process.env.TUOTU_PASSWORD,
+              TUOTU_UID: process.env.TUOTU_UID,
+              TUOTU_FIELD_NAME: process.env.TUOTU_FIELD_NAME,
+              TUOTU_FORM_HEAD_UUID: process.env.TUOTU_FORM_HEAD_UUID,
+              TUOTU_API_HOST: process.env.TUOTU_API_HOST,
+              TUOTU_API_ORIGIN: process.env.TUOTU_API_ORIGIN,
+            },
+            // MCP 服务器配置
+            mcpServers: {
+              'tuotu-oss': {
+                command: 'npx',
+                args: ['ts-node', path.join(process.cwd(), 'mcp-servers/tuotu-oss/index.ts')],
+                env: {
+                  TUOTU_USERNAME: process.env.TUOTU_USERNAME,
+                  TUOTU_PASSWORD: process.env.TUOTU_PASSWORD,
+                  TUOTU_UID: process.env.TUOTU_UID,
+                  TUOTU_FIELD_NAME: process.env.TUOTU_FIELD_NAME,
+                  TUOTU_FORM_HEAD_UUID: process.env.TUOTU_FORM_HEAD_UUID,
+                  TUOTU_API_HOST: process.env.TUOTU_API_HOST,
+                  TUOTU_API_ORIGIN: process.env.TUOTU_API_ORIGIN,
+                },
+              },
             },
           };
 
