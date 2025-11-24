@@ -10,6 +10,11 @@
 !.yarn/releases
 !.yarn/versions
 
+# MCP servers node_modules
+mcp-servers/*/node_modules
+mcp-servers/*/package-lock.json
+mcp-servers/*/pnpm-lock.yaml
+
 # testing
 /coverage
 
