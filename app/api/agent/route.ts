@@ -26,7 +26,14 @@ export async function POST(request: NextRequest) {
           const agentOptions: any = {
             model: config?.model || 'sonnet',
             cwd: cwdPath,
-            allowedTools: ['Read', 'Glob', 'Grep', 'Write', 'Edit', 'Bash', 'SeaTaskrch','webFetch', 'WebSearch', 'mcp__tuotu-oss__upload_report'],
+            allowedTools: [
+              'Read', 'Glob', 'Grep', 'Write', 'Edit', 'Bash', 'Task', 'WebFetch', 'WebSearch',
+              // MCP 工具
+              'mcp__tuotu-oss__upload_report',
+              'mcp__mineru__process_pdf',
+              'mcp__mineru__save_images',
+              'mcp__mineru__get_pdf_content',
+            ],
             // 🔧 在 API 路由中必须使用非交互式权限模式
             // "ask" 模式会导致进程退出，因为无法弹出对话框
             dangerouslySkipPermissions: true,
@@ -47,7 +54,7 @@ export async function POST(request: NextRequest) {
             mcpServers: {
               'tuotu-oss': {
                 command: 'npx',
-                args: ['ts-node', path.join(process.cwd(), 'mcp-servers/tuotu-oss/index.ts')],
+                args: ['tsx', path.join(process.cwd(), 'mcp-servers/tuotu-oss/index.ts')],
                 env: {
                   TUOTU_USERNAME: process.env.TUOTU_USERNAME,
                   TUOTU_PASSWORD: process.env.TUOTU_PASSWORD,
@@ -57,6 +64,10 @@ export async function POST(request: NextRequest) {
                   TUOTU_API_HOST: process.env.TUOTU_API_HOST,
                   TUOTU_API_ORIGIN: process.env.TUOTU_API_ORIGIN,
                 },
+              },
+              'mineru': {
+                command: 'npx',
+                args: ['tsx', path.join(process.cwd(), 'mcp-servers/mineru/index.ts')],
               },
             },
           };
