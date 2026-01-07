@@ -17,6 +17,20 @@ export async function POST(request: NextRequest) {
     const stream = new ReadableStream({
       async start(controller) {
         const encoder = new TextEncoder();
+        let isClosed = false;
+
+        const safeEnqueue = (data: string) => {
+          if (!isClosed) {
+            controller.enqueue(encoder.encode(data));
+          }
+        };
+
+        const safeClose = () => {
+          if (!isClosed) {
+            isClosed = true;
+            controller.close();
+          }
+        };
 
         try {
           // 构建 Agent SDK 配置，使用传入的 config 或默认值
@@ -28,11 +42,6 @@ export async function POST(request: NextRequest) {
             cwd: cwdPath,
             allowedTools: [
               'Read', 'Glob', 'Grep', 'Write', 'Edit', 'Bash', 'Task', 'WebFetch', 'WebSearch',
-              // MCP 工具
-              'mcp__tuotu-oss__upload_report',
-              'mcp__mineru__process_pdf',
-              'mcp__mineru__save_images',
-              'mcp__mineru__get_pdf_content',
             ],
             // 🔧 在 API 路由中必须使用非交互式权限模式
             // "ask" 模式会导致进程退出，因为无法弹出对话框
@@ -42,13 +51,6 @@ export async function POST(request: NextRequest) {
               PATH: process.env.PATH,
               ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY,
               ANTHROPIC_BASE_URL: process.env.ANTHROPIC_BASE_URL,
-              TUOTU_USERNAME: process.env.TUOTU_USERNAME,
-              TUOTU_PASSWORD: process.env.TUOTU_PASSWORD,
-              TUOTU_UID: process.env.TUOTU_UID,
-              TUOTU_FIELD_NAME: process.env.TUOTU_FIELD_NAME,
-              TUOTU_FORM_HEAD_UUID: process.env.TUOTU_FORM_HEAD_UUID,
-              TUOTU_API_HOST: process.env.TUOTU_API_HOST,
-              TUOTU_API_ORIGIN: process.env.TUOTU_API_ORIGIN,
             },
             // MCP 服务器配置
             mcpServers: {
@@ -96,10 +98,10 @@ export async function POST(request: NextRequest) {
           // 流式处理响应
           for await (const message of result) {
             const data = JSON.stringify(message) + '\n';
-            controller.enqueue(encoder.encode(data));
+            safeEnqueue(data);
           }
 
-          controller.close();
+          safeClose();
         } catch (error) {
           // 🔴 详细错误日志：后端捕获 Agent SDK 错误
           console.error('❌ Agent SDK Error Details:');
@@ -120,10 +122,8 @@ export async function POST(request: NextRequest) {
             stack: error instanceof Error ? error.stack : undefined,
           };
 
-          controller.enqueue(
-            encoder.encode(JSON.stringify(errorData) + '\n')
-          );
-          controller.close();
+          safeEnqueue(JSON.stringify(errorData) + '\n');
+          safeClose();
         }
       },
     });

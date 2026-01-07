@@ -10,7 +10,7 @@ export function AgentChat() {
   return (
     <main className="flex-1 p-8 max-w-7xl mx-auto w-full">
       <h1 className="mb-8 text-3xl font-bold text-black dark:text-white">
-        Claude Agent SDK Test
+        Claude Agent SDK with MiniMax M2.1
       </h1>
 
       <ChatInput isLoading={isLoading} onSubmit={sendQuery} />
